@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.sql": "oracle",
+        "*.tcc": "cpp",
+        "string": "cpp",
+        "iostream": "cpp",
+        "iomanip": "cpp",
+        "ostream": "cpp"
+    }
+}
