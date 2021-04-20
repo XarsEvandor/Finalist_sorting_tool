@@ -118,6 +118,15 @@ int main()
                 cout << "Input: ";
                 cin >> option;
                 cin.sync(); // Clears the cin buffer
+
+                while (cin.fail()) // Error trapping begins
+                {
+                    cin.clear();
+                    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // helps survive text char input
+                    cout << "Invalid entry. Try again: ";
+                    cin >> option;
+                    cin.sync(); // Clears the cin buffer
+                }
             }
             else
                 break;
